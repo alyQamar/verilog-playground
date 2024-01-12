@@ -15,14 +15,14 @@ Welcome to my Verilog playground, where I experiment with digital logic designs 
 
 ## Usage
 
-Clone this repository: git clone https://github.com/alyQamar/verilog-playground.git
-Navigate to the desired project directory.
-Use a Verilog simulator (e.g., Icarus Verilog, ModelSim) to simulate the code.
-Refer to the testbench files (ending in \_tb.v) for simulation examples.
+-   Clone this repository: git clone https://github.com/alyQamar/verilog-playground.git
+-   Navigate to the desired project directory.
+    Use a Verilog simulator (e.g., Icarus Verilog, ModelSim) to simulate the code.
+-   Refer to the testbench files (ending in \_tb.v) for simulation examples.
 
 ## Simulate the code
 
--   Using iverilog
+-   Using [iverilog](https://bleyer.org/icarus/)
 
 ```bash
 iverilog -o simulation_output module_name.v module_name_tb.v
@@ -32,11 +32,11 @@ vvp simulation_output.vvp
 gtkwave simulation_output.vcd
 ```
 
--   Using VS Code (with the Verilog HDL extension)
+-   Using VS Code (with the [Verilog HDL](https://marketplace.visualstudio.com/items?itemName=leafvmaple.verilog) extension)
     1 - Open the module_name_tb.v file in VS Code.
     2 - Configure the launch configuration for iverilog and gtkwave.
-    3- Run the simulation from within VS Code.
-    3- run the simulation output with gtkwave.
+    3- Run the simulation to get "simulation_output.vsd" within VS Code.
+    4- Run the simulation output with gtkwave.
     ```bash
     gtkwave simulation_output.vcd
     ```
@@ -45,8 +45,12 @@ gtkwave simulation_output.vcd
 
 I'm a Computer Engineering student and this repository serves as a platform for my learning and experimentation.
 
-## Acknowledgements
+## References
 
-Special thanks to my professors and classmates for their guidance and support.
+-   Dr. Mohamed Ali Rohaim: Lectures notes (Computer Aided Design - SCE403).
+-   Verilog® Quickstart: A Practical Guide to Simulation and Synthesis in Verilog (The Springer International Series in Engineering and Computer Science, 667) by James M. Lee
+-   Verilog Tutorial Playlist by Ahmed Hany : [Verilog HDL tutorial in arabic](https://youtube.com/playlist?list=PL3wGfPnyEQlHD09fR30jL3SQndmtXnCt5&feature=shared)
+
+<br/>
 
 **Happy experimenting!**
